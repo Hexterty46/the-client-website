@@ -191,7 +191,7 @@ header button {
     cursor: pointer;
 }
 
-.footer-links {
+.footer-left {
     display: flex;
     gap: 100px;
     margin-left: 700px;
