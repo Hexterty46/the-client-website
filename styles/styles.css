@@ -5,6 +5,21 @@
   font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
+:root {
+  --milledoni-black: #212121;
+  --milledoni-grey: #898a8d;
+  --milledoni-light-grey: #f6f5f5;
+  --milledoni-white: #ffffff;
+  --milledoni-light-yellow: #f9f2d4;
+  --milledoni-yellow: #e2b100;
+  --milledoni-purple: #aa2677;
+  --milledoni-blue: #466ebf;
+  --milledoni-red: #b2291f;
+  --milledoni-green: #20a687;
+
+  line-height: 1.4;
+}
+
 body {
   background-color: #fff;
   color: #333;
@@ -43,6 +58,14 @@ header button {
     font-size: 14px;
     transition: all 0.2s ease;
     justify-content: right;
+}
+
+.milledoni-header-logo-big-letters {
+  display: none;
+
+  @media (min-width: 678px) {
+    display: block;
+  }
 }
 
 header button:hover {
@@ -192,23 +215,4 @@ header button {
 
 footer {
   background-color: black;
-}
-
-@media (max-width: 480px) {
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .header-buttons {
-    width: 100%;
-    justify-content: flex-end;
-    margin-left: 100px ;
-  }
-
-  .ai, .main {
-    display: flex;
-  }
 }
