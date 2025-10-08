@@ -64,13 +64,18 @@ header {
     font-size: 14px;
     transition: all 0.2s ease;
 
+    p {
+      display: none;
+
+      @media (min-width: 678px) {
+        justify-content: right;
+        display: inline;
+      }
+    }
+
     &:hover {
       background-color: #f9f9f9;
       border-color: #aaa;
-    }
-
-    @media (min-width: 678px) {
-      justify-content: right;
     }
   }
 
