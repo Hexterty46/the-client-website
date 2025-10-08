@@ -27,7 +27,7 @@ body {
 
 article {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
 
   @media (min-width: 678px) {
@@ -213,13 +213,17 @@ main {
 }
 
 .footer-left {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 20px;
 
-  @media (min-width: 678px) {
-    gap: 60px;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   ul {
